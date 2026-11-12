@@ -1,0 +1,37 @@
+.dialog {
+  width: min(580px, calc(100vw - 32px));
+  max-height: 86svh;
+  border: none;
+  background: #faf8f5;
+  color: #292622;
+  padding: 35px;
+  box-shadow: 0 20px 100px #0003;
+}
+.dialog::backdrop {
+  background: #211c18aa;
+  backdrop-filter: blur(5px);
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+.heading h2 {
+  font:
+    32px Georgia,
+    serif;
+  margin: 0;
+}
+.heading button {
+  border: 0;
+  background: none;
+  padding: 12px;
+  color: inherit;
+}
+@media (max-width: 500px) {
+  .dialog {
+    padding: 22px;
+  }
+}

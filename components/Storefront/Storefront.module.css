@@ -1,0 +1,293 @@
+.collection {
+  padding: 95px 6% 55px;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 55px;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 2.8px;
+  color: #8f7547;
+}
+.intro h2,
+.contact h2 {
+  font:
+    45px/1.2 Georgia,
+    serif;
+  margin: 22px 0;
+  letter-spacing: -1px;
+}
+.intro h2 em,
+.contact h2 em {
+  color: #a36e63;
+}
+.intro p,
+.contact p {
+  color: #756e68;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #ded5cb;
+  padding-bottom: 18px;
+}
+.filters {
+  display: flex;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+.filters button {
+  border: 0;
+  background: none;
+  color: #756e68;
+  font-size: 12px;
+  padding: 12px 0;
+  position: relative;
+}
+.filters button[aria-pressed="true"] {
+  color: #292622;
+}
+.filters button[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #292622;
+}
+.search span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.search input {
+  width: 170px;
+  border: 0;
+  border-bottom: 1px solid #c8bbae;
+  padding: 10px 0;
+  color: var(--ink);
+  background: none;
+  font-size: 12px;
+  border-radius: 0;
+}
+.demo {
+  font-size: 10px;
+  color: #756e68;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 24px;
+}
+.collectionEnd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ded5cb;
+  padding-top: 25px;
+  margin-top: 20px;
+  font-size: 11px;
+  gap: 20px;
+}
+.collectionEnd > span {
+  color: #756e68;
+}
+.contact {
+  text-align: center;
+  padding: 95px 20px;
+}
+.contact > a {
+  display: inline-block;
+  border: 1px solid #baa783;
+  padding: 17px 35px;
+  margin-top: 25px;
+  font-size: 12px;
+}
+.primary,
+.secondary {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: #292622;
+  border: 1px solid #292622;
+  color: white;
+  padding: 17px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.secondary {
+  background: transparent;
+  color: #292622;
+}
+.detail > img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+.detail h3 {
+  font:
+    23px Georgia,
+    serif;
+}
+.detail p {
+  color: #756e68;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.detail .note,
+.note {
+  color: #756e68;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.menu {
+  display: grid;
+  gap: 10px;
+}
+.menu button {
+  background: none;
+  color: inherit;
+  border: 0;
+  text-align: left;
+}
+.menu a,
+.menu button {
+  font:
+    25px Georgia,
+    serif;
+  padding: 22px 0;
+  border-bottom: 1px solid #ded5cb;
+  display: flex;
+  justify-content: space-between;
+}
+.menu span {
+  font:
+    10px Arial,
+    sans-serif;
+  color: #8f7547;
+}
+.empty {
+  padding: 30px 0;
+  color: #756e68;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #ded5cb;
+  padding: 18px 0;
+}
+.row button {
+  color: #292622;
+  border: none;
+  background: none;
+  text-align: left;
+  padding: 10px 0;
+}
+.row small {
+  display: block;
+  font-size: 11px;
+  color: #756e68;
+  padding-top: 8px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.quantity button {
+  padding: 12px;
+  min-width: 38px;
+  text-align: center;
+  border: 1px solid #ded5cb;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.announcement {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  left: 22px;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.announcement button {
+  pointer-events: auto;
+  background: #292622;
+  color: #fff;
+  border: 1px solid #c6ad76;
+  padding: 18px 25px;
+  font-size: 12px;
+  box-shadow: 0 10px 30px #0002;
+}
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .filters {
+    gap: 18px;
+  }
+}
+@media (max-width: 650px) {
+  .collection {
+    padding: 65px 6% 40px;
+  }
+  .intro h2,
+  .contact h2 {
+    font-size: 35px;
+  }
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filters {
+    gap: 16px;
+  }
+  .filters button {
+    font-size: 11px;
+  }
+  .search input {
+    width: 100%;
+  }
+  .grid {
+    gap: 16px;
+  }
+  .collectionEnd {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact {
+    padding: 70px 7%;
+  }
+}
+
+.source {
+  display: block;
+  margin: 18px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 12px;
+  line-height: 1.7;
+}
